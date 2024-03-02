@@ -1,0 +1,5 @@
+# Estudo Angular #Interpolação 26
+
+A interpolação no Angular é um método poderoso para vincular dados de seu componente TypeScript a sua visão HTML. Isso é feito utilizando chaves duplas {{ }} para exibir o dado.
+
+Operador Ternário na interpolação: {{ plano?.tipo ? plano.tipo : ‘vazio’ }}

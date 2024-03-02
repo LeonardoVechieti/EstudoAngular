@@ -1,0 +1,25 @@
+// ::ng-deep #cardss .button-card {
+//   background-color: red !important;
+// }
+// ou
+// ::ng-deep .button-card {
+//   background-color: red !important;
+// }
+// nesse caso o css é aplicado em todos os componentes que utilizam a classe .button-card, 
+//caso abaixo seja utilizado o ::ng-deep #cardss .button-card, o css só será aplicado no componente
+
+
+:host::ng-deep .button-card {
+  background-color: red !important;
+}
+.card {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #b1d451;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+  height: 150px;
+  display: inline-block;
+  text-align: center;
+}
