@@ -23,3 +23,7 @@
   display: inline-block;
   text-align: center;
 }
+
+:host ::ng-deep .mdc-slider__track--active_fill {
+  border-color: red;
+}

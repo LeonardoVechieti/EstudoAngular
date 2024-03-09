@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { ButtonComponent } from './components/button/button.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatSliderModule } from '@angular/material/slider';
+import { StatusClassPipe } from './pipes/status.class.pipe';
+import { TestePipeComponent } from './components/teste-pipe/teste-pipe.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ButtonComponent
+    ButtonComponent,
+    TestePipeComponent,
+    StatusClassPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSliderModule
   ],
   providers: [
     provideAnimationsAsync()
